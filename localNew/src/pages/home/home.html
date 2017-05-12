@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Dubrovnik As Local
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <ion-content padding="true" class="has-header">
+    <div>
+      <a style="display:block;" href-inappbrowser="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/1_dubrovnik_pano.jpg/1000px-1_dubrovnik_pano.jpg">
+        <img src="img/7SUNv7PKTpOZ88OHChB6_1000px-1_dubrovnik_pano.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+      </a>
+    </div>
+    <h4 id="dubrovnikAsLocal-heading1" style="color:#000000;text-align:center;">Welcome to Dubrovnik As Local</h4>
+    <div id="dubrovnikAsLocal-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Feel free to Select any of the places and read the comments and you can also check te location etc.</p>
+       <button style="text-align:center;" ion-button (click) = "redirectAbout()">What is this page About?</button>
+      <h4>Picak a place down below!</h4>
+    </div>
+    <ion-list id="dubrovnikAsLocal-list4">
+      <ion-item class="item-thumbnail-left" id="dubrovnikAsLocal-list-item13" ui-sref="tabsController.danE">
+        <img src="img/EXKsOVqZQvitMllfetuR_dan_e1.jpg">
+        <h2>Danče</h2>
+        <p>An amazing local beach that you will enjoy!</p>
+        <button ion-button (click) = "redirectDance()">Visit this page!</button>
+      </ion-item>
+      <ion-item class="item-thumbnail-left" id="dubrovnikAsLocal-list-item14" ui-sref="tabsController.petka">
+        <img src="img/venT01E8QQGBbhDVu0TC_img_petka_forrest_path_sevina_staza_410x390.jpg">
+        <h2>Petka</h2>
+        <p>Breathtaking park that no one can resist.</p>
+        <button ion-button (click) = "redirectPetka()">Visit this page!</button>
+      </ion-item>
+      <ion-item class="item-thumbnail-left" id="dubrovnikAsLocal-list-item15" ui-sref="tabsController.gradac">
+        <img src="img/MpD0DwW2RcijmLmaWpFz_1792568-dubrovnik-old-town-croatia-view-from-gradac-park.jpg">
+        <h2>Gradac</h2>
+        <p>Beautiful park near Old Town</p>
+        <button ion-button (click) = "redirectGradac()">Visit this page!</button>
+      </ion-item>
+      <ion-item class="item-thumbnail-left" id="dubrovnikAsLocal-list-item16" ui-sref="tabsController.depozit">
+        <img src="img/JOsXKrADSZu7MA5pxgOd_75021919.jpg">
+        <h2>Depozit</h2>
+        <p>Best view in the city</p>
+        <button ion-button (click) = "redirectDepozit()">Visit this page!</button>
+      </ion-item>
+    </ion-list>
+  </ion-content>

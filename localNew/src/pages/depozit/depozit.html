@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Depozit 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <ion-content padding="true" class="has-header">
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider5" delegate-handle="slider5" id="depozit-slider5" style="width:100%;height:200px;">
+      <ion-slide id="depozit-slide222" style="background:url(&quot;img/mgYQPOx9TIEYtXcoNgFu_JOsXKrADSZu7MA5pxgOd_75021919.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide>
+      <ion-slide id="depozit-slide223" style="background:url(&quot;img/depozit.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide>
+    </ion-slides>
+    <h2 id="depozit-heading13" style="color:#000000;font-weight:300;font-style:italic;text-align:center;">Depozit</h2>
+    <div id="depozit-markdown11" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Just above the Dubrovnik a place with breathtaking view, easily accesable and free best time to visi is during the day!</p>
+    </div>
+    <div>
+      <img src="img/depozitMap.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="width: 300px; height: 48px;"></div>
+    <div id="depozit-container4">
+      <form id="depozit-form10" class="list" style="text-align:center;">
+        <label class="item item-input" id="depozit-input9">
+          <input #aa name="inputValue" type="text" placeholder="Tell us what you think">
+        </label>
+        <button ion-button (click) = "postComment(aa.value)">Post comment!</button>
+      </form>
+    </div>
+    <div class="spacer" style="width: 300px; height: 36px;"></div>
+    <h3 id="depozit-heading14" style="color:#000000;text-align:center;">Comments</h3>
+    <ion-list id="depozit-list8">
+      <ion-item *ngFor = "let n of comments">
+        <h2>App User Comment</h2>
+        <p>{{n.comment}}!</p>
+      </ion-item>
+      <!--<ion-item class="item-avatar" id="depozit-list-item30">
+        <h2>Meg</h2>
+        <p>Great!</p>
+      </ion-item>
+      <ion-item class="item-avatar" id="depozit-list-item31">
+        <h2>Gregor</h2>
+        <p>I had my fare share of traveling but this</p>
+      </ion-item>
+      <ion-item class="item-avatar" id="depozit-list-item32">
+        <h2>Luke</h2>
+        <p>So cool!</p>
+      </ion-item>-->
+    </ion-list>
+
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBc6-Bll9wfFYXD3sa69tZ9ygJ_0wihxQQ"></script>
+    <script src="cordova.js"></script>
+  </ion-content>

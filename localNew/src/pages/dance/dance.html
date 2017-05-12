@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+       Dance
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding="true" class="has-header">
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider2" delegate-handle="slider2" id="danE-slider2" style="width:100%;height:200px;">
+      <ion-slide id="danE-slide210" style="background:url(&quot;img/enodXF9ITWudbVUOTa3H_dan_e1.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide>
+      <ion-slide id="danE-slide211" style="background:url(&quot;img/vZe8IzCxQRKr87s3paQU_dance-beach-dubrovnik1.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide>
+      <ion-slide id="danE-slide212" style="background:url(&quot;img/7M8V46VkTOC9GwyymJxr_dubrovnik-private-guide.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide>
+    </ion-slides>
+    <h2 id="danE-heading2" style="color:#000000;font-weight:300;font-style:italic;text-align:center;">Danče Beach</h2>
+    <div id="danE-markdown8" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Dance beach is the one of the three closest beaches to the Old Town, it's a beach where most of the locals goes. You can enjoy a cold drink and a breathtaking view.</p>
+    </div>
+    <div>
+      <img src="img/danceMap.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="width: 300px; height: 48px;"></div>
+    <div id="danE-container1">
+      <form id="danE-form7" class="list" style="text-align:center;">
+        <label class="item item-input" id="danE-input6">
+          <input #aa name="inputValue" type="text" placeholder="Tell us what you think">
+        </label>
+        <button ion-button (click) = "postComment(aa.value)">Post comment!</button>
+      </form>
+    </div>
+    <div class="spacer" style="width: 300px; height: 36px;"></div>
+    <h3 id="danE-heading3" style="color:#000000;text-align:center;">Comments</h3>
+    <ion-list id="danE-list5">
+      <<ion-item *ngFor = "let n of comments">
+        <h2>App User Comment</h2>
+        <p>{{n.comment}}!</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
